@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendations for {{ title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Recommendations for "{{ title }}"</h1>
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% else %}
+      <div class="results">
+        {% for movie in results %}
+          <div class="result-card">
+            <h3>{{ movie.original_title }}</h3>
+            <p><strong>Genre:</strong> {{ movie.genre }}</p>
+            <p><strong>Language:</strong> {{ movie.original_language }}</p>
+            <p><strong>Rating:</strong> ⭐ {{ movie.vote_average }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+    <a href="/" class="back-btn">⬅ Back</a>
+  </div>
+</body>
+</html>

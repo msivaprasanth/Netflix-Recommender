@@ -1,0 +1,89 @@
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: rgba(20, 20, 20, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    width: 500px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+h1 {
+    color: #E50914;
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+p {
+    color: #aaa;
+}
+
+.search-bar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+    background: #222;
+    color: #fff;
+}
+
+.search-bar button {
+    background: #E50914;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-bar button:hover {
+    background: #f40612;
+}
+
+.results {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.result-card {
+    background: #222;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+.result-card h3 {
+    color: #E50914;
+    margin: 0 0 5px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: #E50914;
+    text-decoration: none;
+}
+
+.error {
+    color: #ff6961;
+    margin-top: 20px;
+}

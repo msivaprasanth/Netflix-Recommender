@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Recommender</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Netflix Recommender</h1>
+    <p>Find your next favorite movie with AI-powered recommendations</p>
+    <form action="/recommend" method="POST" class="search-bar">
+      <input type="text" name="movie" placeholder="Search for a movie..." required autocomplete="off">
+      <button type="submit">Recommend</button>
+    </form>
+  </div>
+</body>
+</html>
